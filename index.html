@@ -1,58 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Star Wars</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-	<div class="top_menu">
-		<div class="top_menu1 clearfix">
-			<ul>
-				<li><a class="menu_1 clearfix" href="#">Meu YouBike</a></li>
-				<li><a class="menu_1 clearfix" href="#">Vender</a></li>
-				<li><a class="menu_1 clearfix" href="#">Forum</a></li>
-				<li><a class="menu_1 clearfix" href="#">Contato</a></li>
-				<li><a class="menu_1 clearfix" href="#">Ajuda</a></li>
-				<li><img class="border clearfix" src="img/line_top_menu.png" alt="Border"></li>
-			</ul>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Star Wars Heroes</h1>
+      <div class="main">
+        <div class="col-md-3">
+          <div class="avatar">
+          </div>
+          <div class="buttons">
+            <button class="btn btn-color prev" type="button"  disabled="disabled">PREV</button>
+            <button class="btn btn-color next" type="button">NEXT</button>
+          </div>
+        </div>
+        <div class='boxInfo'>
+          <div class="col-md-4 info">
+          </div>
+        <div class="col-md-4 films">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-			<ul>
-				<li><a class="menu_2 clearfix" href="#"><img src="img/flag.png" alt="Flag" /></a></li>
-				<li><a class="menu_2 clearfix" href="#">Minhas Ofertas</a></li>
-				<li><a class="menu_2 clearfix" href="#">Ola! Entrar ou Cadastre-se</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="form">
-		<h1>Cadastre-se</h1>
-		<a class="fb" href="#"><img src="img/fb.png" alt="FB" /></a>
-		<img class="border_cont" src="img/form_1.png" alt="Border" />
-		<form action="#" method="post">
-			<p><input class="text_form" type="text" name="first_name" placeholder="First name" required></p>
-			<p><input class="text_form" type="text" name="last_name" placeholder="Last name"></p>
-			<p><input class="text_form" type="email" name="email" placeholder="Email Address"></p>
-			<p><input class="text_form" type="password" name="password" placeholder="Choose Password"></p>
-			<p><input class="text_form" type="password" name="confirm" placeholder="Password Confirm"></p>
-			<p><input class="box" type="checkbox" id="send_box">
-			<label for="send_box">Send me Youbike updates and tips</label></p>
-			</label>
-			<p>
-				<input class="button" type="submit" name="create" value="Create my Account">
-			</p>
-		</form>
-
-		<footer>
-			<p>By clicking the button above, you agree to the Terms of Service</p>
-			<p>Xiew our Privacy Policy.</p>
-
-		</footer>
-
-	</div>
-
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
