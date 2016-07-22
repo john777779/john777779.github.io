@@ -40,13 +40,13 @@ li{
     color: black;
 }
 .boxInfo {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .loading {
     opacity: 1;
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 10;
     background: url('../img/loading.gif') 50% 40% no-repeat;
 }
