@@ -3,7 +3,7 @@
     var info= document.querySelector('.info'),
         filmBox = document.querySelector('.films'),
         load = document.querySelector('.boxInfo'),
-        li = document.createElement('li'),
+        // li = document.createElement('li'),
         prev = document.querySelector('.prev'),
         next = document.querySelector('.next'),
         spinner = document.createElement("div");
@@ -17,7 +17,7 @@
         id++;
         removeInfo();
         loadHero(id);
-      } if ( id === 2 ) {
+      } if ( id === 1 ) {
         prev.removeAttribute('disabled');
       } if ( id === 88 ) {
         next.setAttribute('disabled', 'disabled');
@@ -30,8 +30,8 @@
         removeInfo();
         loadHero(id);
       } if ( id === 1 ) {
-        prev.setAttribute('disabled', 'disabled');
-      } if ( id === 87 ) {
+          prev.setAttribute('disabled', 'disabled');
+        } if ( id === 87 ) {
         next.removeAttribute('disabled');
       };
     };
@@ -42,12 +42,22 @@
     };
 
     function loader() {
+      prev.setAttribute('disabled', 'disabled');
+      next.setAttribute('disabled', 'disabled');
       load.setAttribute('style', 'opacity: 0');
       spinner.classList.add("loading");
       document.body.appendChild(spinner);
     };
 
     function removeLoader() {
+      if (id === 1) {
+        next.removeAttribute('disabled');
+      } else if (id === 87) {
+        prev.removeAttribute('disabled');
+      } else {
+        prev.removeAttribute('disabled');
+        next.removeAttribute('disabled');
+      }
       load.setAttribute('style', 'opacity: 1');
       load.setAttribute('style', 'transition: all 1s ease-out');
       spinner.remove();
