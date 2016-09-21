@@ -1,0 +1,763 @@
+.jcarousel ul,ol,ul {
+  list-style: none
+}
+
+.grid__text,.wrapper,header {
+  text-align: center
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+.header__link,.login .login__link {
+  line-height: 35px;
+  text-decoration: none
+}
+
+blockquote,q {
+  quotes: none
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+.jcarousel-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 300px
+}
+
+.jcarousel {
+  position: relative;
+  overflow: hidden
+}
+
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  margin: 0;
+  padding: 0
+}
+
+.jcarousel li {
+  float: left
+}
+
+.jcarousel-control-next,.jcarousel-control-prev {
+  position: absolute;
+  top: 150px;
+  text-align: center
+}
+
+.jcarousel-control-prev {
+  left: 20px
+}
+
+.jcarousel-control-next {
+  right: 20px
+}
+
+.clearfix:after {
+  content: ' ';
+  clear: both;
+  display: block;
+  font-size: 0
+}
+
+#noPic,.grid__text {
+  font-size: 22px;
+  width: 100%;
+  font-family: montserratbold,Arial,sans-serif
+}
+
+.grid__text {
+  position: absolute;
+  top: 45%;
+  color: #FFF
+}
+
+.picture {
+  margin: 1.5%
+}
+
+.radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  max-width: 100%
+}
+
+#noPic {
+  color: #FF4E50;
+  margin: 0 0 35px
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+@  font-face {
+    font-family: montserratbold;
+    src: url(../fonts/montserrat-bold-webfont-webfont.svg#montserratbold) format("svg");
+    font-weight: 400;
+    font-style: normal
+  }@  font-face {
+    font-family: montserratregular;
+    src: url(../fonts/montserrat-regular-webfont-webfont.svg#montserratregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+  }@  font-face {
+    font-family: robotoregular;
+    src: url(../fonts/roboto-regular-webfont-webfont.svg#robotoregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+  }@  font-face {
+    font-family: robotobold_italic;
+    src: url(../fonts/roboto-bolditalic-webfont-webfont.svg#robotobold_italic) format("svg");
+    font-weight: 400;
+    font-style: normal
+  }@  font-face {
+    font-family: robotolight;
+    src: url(../fonts/roboto-light-webfont.svg#robotolight) format("svg");
+    font-weight: 400;
+    font-style: normal
+  }
+}
+
+@font-face {
+  font-family:montserratbold;src:url(../fonts/montserrat-bold-webfont.eot);src:url(../fonts/montserrat-bold-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/montserrat-bold-webfont.woff2) format("woff2"),url(../fonts/montserrat-bold-webfont.woff) format("woff"),url(../fonts/montserrat-bold-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:montserratregular;src:url(../fonts/montserrat-regular-webfont.eot);src:url(../fonts/montserrat-regular-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/montserrat-regular-webfont.woff2) format("woff2"),url(../fonts/montserrat-regular-webfont.woff) format("woff"),url(../fonts/montserrat-regular-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotoblack_italic;src:url(../fonts/roboto-blackitalic-webfont.eot);src:url(../fonts/roboto-blackitalic-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-blackitalic-webfont.woff2) format("woff2"),url(../fonts/roboto-blackitalic-webfont.woff) format("woff"),url(../fonts/roboto-blackitalic-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotoitalic;src:url(../fonts/roboto-italic-webfont.eot);src:url(../fonts/roboto-italic-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-italic-webfont.woff2) format("woff2"),url(../fonts/roboto-italic-webfont.woff) format("woff"),url(../fonts/roboto-italic-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotomedium_italic;src:url(../fonts/roboto-mediumitalic-webfont.eot);src:url(../fonts/roboto-mediumitalic-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-mediumitalic-webfont.woff2) format("woff2"),url(../fonts/roboto-mediumitalic-webfont.woff) format("woff"),url(../fonts/roboto-mediumitalic-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotolight_italic;src:url(../fonts/roboto-lightitalic-webfont.eot);src:url(../fonts/roboto-lightitalic-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-lightitalic-webfont.woff2) format("woff2"),url(../fonts/roboto-lightitalic-webfont.woff) format("woff"),url(../fonts/roboto-lightitalic-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotoregular;src:url(../fonts/roboto-regular-webfont.eot);src:url(../fonts/roboto-regular-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-regular-webfont.woff2) format("woff2"),url(../fonts/roboto-regular-webfont.woff) format("woff"),url(../fonts/roboto-regular-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotobold_italic;src:url(../fonts/roboto-bolditalic-webfont.eot);src:url(../fonts/roboto-bolditalic-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-bolditalic-webfont.woff2) format("woff2"),url(../fonts/roboto-bolditalic-webfont.woff) format("woff"),url(../fonts/roboto-bolditalic-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotoblack;src:url(../fonts/roboto-black-webfont.eot);src:url(../fonts/roboto-black-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-black-webfont.woff2) format("woff2"),url(../fonts/roboto-black-webfont.woff) format("woff"),url(../fonts/roboto-black-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotolight;src:url(../fonts/roboto-light-webfont.eot);src:url(../fonts/roboto-light-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-light-webfont.woff2) format("woff2"),url(../fonts/roboto-light-webfont.woff) format("woff"),url(../fonts/roboto-light-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotomedium;src:url(../fonts/roboto-medium-webfont.eot);src:url(../fonts/roboto-medium-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-medium-webfont.woff2) format("woff2"),url(../fonts/roboto-medium-webfont.woff) format("woff"),url(../fonts/roboto-medium-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotobold;src:url(../fonts/roboto-bold-webfont.eot);src:url(../fonts/roboto-bold-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-bold-webfont.woff2) format("woff2"),url(../fonts/roboto-bold-webfont.woff) format("woff"),url(../fonts/roboto-bold-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotothin_italic;src:url(../fonts/roboto-thinitalic-webfont.eot);src:url(../fonts/roboto-thinitalic-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-thinitalic-webfont.woff2) format("woff2"),url(../fonts/roboto-thinitalic-webfont.woff) format("woff"),url(../fonts/roboto-thinitalic-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+@font-face {
+  font-family:robotothin;src:url(../fonts/roboto-thin-webfont.eot);src:url(../fonts/roboto-thin-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/roboto-thin-webfont.woff2) format("woff2"),url(../fonts/roboto-thin-webfont.woff) format("woff"),url(../fonts/roboto-thin-webfont.ttf) format("truetype");font-weight:400;font-style:normal
+}
+
+.mobile__logo,.mobile__wrapper {
+  display: none
+}
+
+.wrapper {
+  margin: 0 auto
+}
+
+.logo {
+  padding: 50px 0 0
+}
+
+header {
+  color: #FFF;
+  background: url(../img/header_background.png) top center no-repeat #FFF;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: montserratbold,Arial,sans-serif;
+  font-size: 20px
+}
+
+.logo__name {
+  font-size: 20px;
+  float: left
+}
+
+.login {
+  font-size: 14px;
+  float: right
+}
+
+.login .login__link {
+  color: #FFF;
+  display: inline-block;
+  width: 84px;
+  border: 2px solid transparent
+}
+
+.login .login__link:hover {
+  border: 2px solid #FFF;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #AF978C
+}
+
+.header__title {
+  margin: 155px 0 0;
+  font-size: 52px
+}
+
+.header__text {
+  margin: 45px 0 40px;
+  font-family: robotolight,Arial,sans-serif;
+  font-size: 24px
+}
+
+.header__link {
+  display: block;
+  font-size: 14px;
+  border: 2px solid transparent;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 225px;
+  color: #FFF;
+  margin: 40px auto;
+  background-color: #FF4E50
+}
+
+.header__link:hover {
+  border: 2px solid #FFF
+}
+
+.slider {
+  margin: 100px 0 0
+}
+
+.slider .slider__block {
+  padding: 0 20px 20px;
+  position: absolute;
+  vertical-align: bottom;
+  bottom: 0;
+  text-align: left
+}
+
+.slider .slider__block .slider__textlogo {
+  text-align: center;
+  width: 70px;
+  line-height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #FF4E50;
+  color: #FFF;
+  font-family: montserratregular,Arial,sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px
+}
+
+.slider .slider__block .slider__texttittle {
+  margin: 20px 0 0;
+  font-family: montserratbold,Arial,sans-serif;
+  font-size: 24px;
+  color: #FFF
+}
+
+.slider .slider__block .slider__slidertext {
+  font-family: robotolight,Arial,sans-serif;
+  font-size: 14px;
+  margin: 20px 0 0;
+  color: #CCC
+}
+
+.section__title {
+  color: #333;
+  font-family: montserratbold,Arial,sans-serif;
+  font-weight:bold;
+  font-size: 24px;
+  margin: 0 0 35px
+}
+
+.partners {
+  margin: 100px 0 0
+}
+
+.partner {
+  display: inline-block;
+  font-family: montserratregular,Arial,sans-serif;
+  font-size: 14px;
+  color: #333;
+  width: 225px;
+  vertical-align: top
+}
+
+.partner:nth-child(2) .partner__photo:after {
+  background: url(../img/sprite2.png) no-repeat;
+}
+
+.partner:nth-child(3) .partner__photo:after {
+  background: url(../img/sprite3.png) no-repeat;
+}
+
+.partner:nth-child(4) .partner__photo:after {
+  background: url(../img/sprite4.png) no-repeat;
+}
+
+.partner .partner__photo {
+  position: relative
+}
+
+.partner .partner__photo:after {
+  position: absolute;
+  background: url(../img/sprite1.png) no-repeat;
+  content: ' ';
+  left: 144px;
+  top: 80px;
+  width: 40px;
+  height: 40px
+}
+
+.partner__info {
+  font-family: robotoregular,Arial,sans-serif;
+  font-size: 14px
+}
+
+.partner__name {
+  margin: 20px 0;
+  font-weight:bold
+}
+
+.partners__link {
+  font-family: montserratregular,Arial,sans-serif;
+  font-weight:bold;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  border: 2px solid #FF4E50;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 190px;
+  line-height: 35px;
+  color: #FF4E50;
+  margin: 40px auto;
+  background-color: #FFF
+}
+
+.partners__link:hover {
+  border: 2px solid #FF4E50;
+  background-color: #FF4E50;
+  color: #FFF
+}
+
+.section__text,input[type=text] {
+  font-family: robotoregular,Arial,sans-serif;
+  color: #333
+}
+
+.pictures {
+  padding: 0 0 100px;
+  text-align: center;
+}
+
+.pictures .section__title2 {
+  margin: 100px 0 70px
+}
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+
+.section__text {
+  display: block;
+  padding: 0 0 10px;
+  font-size: 18px
+}
+
+.searching,input[type=text] {
+  font-size: 14px;
+  display: inline-block
+}
+
+input[type=text] {
+  width: 240px;
+  height: 40px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0 0 0 16px;
+  border: 1px solid #CCC
+}
+
+.searching,footer .bottom .footer__design p,footer .bottom .footer__logo,footer .bottom .footer__nav .footer__item {
+  font-family: montserratbold,Arial,sans-serif
+}
+
+input[type=text]:focus {
+  outline: 0
+}
+
+.searching {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FF4E50;
+  border: 2px solid #FF4E50;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  line-height: 40px;
+  width: 160px;
+  color: #FFF;
+  text-decoration: none
+}
+
+.searching:hover {
+  border: 2px solid white;
+}
+
+footer {
+  border-top: 4px solid #FF4E50
+}
+
+footer .bottom {
+  margin: 40px 0
+}
+
+footer .bottom .footer__logo {
+  float: left;
+  font-size: 16px;
+  color: #FF4E50
+}
+
+footer .bottom .footer__design {
+  float: right;
+  text-align: right
+}
+
+footer .bottom .footer__design p {
+  margin: 0 4px 8px 0;
+  font-size: 10px;
+  color: #CCC
+}
+
+footer .bottom .footer__nav {
+  float: left
+}
+
+footer .bottom .footer__nav .footer__subitems {
+  margin: 18px 0 0
+}
+
+footer .bottom .footer__nav .footer__item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px
+}
+
+footer .bottom .footer__nav .footer__item .footer__subitem {
+  text-align: left;
+  margin: 0 0 13px
+}
+
+footer .bottom .footer__nav .footer__item .footer__subitem .footer__sublink {
+  text-decoration: none;
+  font-family: robotoregular,Arial,sans-serif;
+  font-size: 14px;
+  color: #333
+}
+
+footer .bottom .footer__nav .footer__item .footer__subitem .footer__sublink:hover {
+  color: #FF4E50
+}
+
+footer .bottom .footer__nav .footer__item:first-child {
+  margin: 0 90px
+}
+
+
+
+@media only screen and (min-width:768px) and (max-width:940px) {
+  .wrapper {
+    width: 320px
+  }
+
+  header .wrapper {
+    padding: 0 0 140px
+  }
+
+  .logo__name {
+    display: none
+  }
+
+  .header__link,.partners__link,.searching {
+    width: 280px
+  }
+
+  .mobile__logo {
+    display: block;
+    font-size: 20px;
+    margin: 120px 0 0
+  }
+
+  .search #seek {
+    width: 264px
+  }
+
+  .login {
+    float: none
+  }
+
+  .header__title {
+    font-size: 30px
+  }
+
+  .header__text {
+    font-size: 18px
+  }
+
+  .jcarousel-wrapper {
+    display: none
+  }
+
+  .mobile__wrapper {
+    display: block;
+    position: relative
+  }
+
+  .mobile__wrapper .mobile__block {
+    padding: 0 20px 20px;
+    position: absolute;
+    vertical-align: bottom;
+    bottom: 0;
+    text-align: left
+  }
+
+  .mobile__wrapper .mobile__block .mobile__textlogo {
+    text-align: center;
+    width: 70px;
+    line-height: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #FF4E50;
+    color: #FFF;
+    font-family: montserratregular,Arial,sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.5px
+  }
+
+  .mobile__wrapper .mobile__block .mobile__texttittle {
+    margin: 20px 0 0;
+    font-family: montserratbold,Arial,sans-serif;
+    font-size: 24px;
+    color: #FFF
+  }
+
+  .mobile__wrapper .mobile__block .mobile__slidertext {
+    font-family: robotolight,Arial,sans-serif;
+    font-size: 14px;
+    margin: 20px 0 0;
+    color: #CCC
+  }
+
+  .item {
+    width: 95%
+  }
+
+  .section__title {
+    margin: 0 5px 35px;
+    font-weight:bold;
+    line-height: 25px
+  }
+
+  .partner {
+    margin: 20px 0 0
+  }
+
+  .section__text {
+    padding: 0 0 20px
+  }
+
+  .searching {
+    margin: 10px 0 0
+  }
+
+  .pictures {
+    padding: 0 0 40px
+  }
+
+  footer .bottom {
+    margin: 20px 0
+  }
+
+  footer .bottom .footer__logo {
+    float: none;
+    margin: 0 0 20px
+  }
+
+  footer .bottom .footer__design {
+    float: none;
+    text-align: center
+  }
+
+  footer .bottom .footer__design p {
+    margin: 0 4px 8px 0;
+    font-family: montserratbold,Arial,sans-serif;
+    font-size: 10px;
+    color: #CCC
+  }
+
+  footer .bottom .footer__nav {
+    float: none
+  }
+
+  footer .bottom .footer__nav .footer__subitems {
+    margin: 18px 0 0
+  }
+
+  footer .bottom .footer__nav .footer__item {
+    display: block;
+    margin: 0 0 20px
+  }
+
+  footer .bottom .footer__nav .footer__item .footer__subitem {
+    display: inline-block
+  }
+
+  footer .bottom .footer__nav .footer__item .footer__subitem .footer__sublink:hover {
+    color: #FF4E50
+  }
+
+  footer .bottom .footer__nav .footer__item:first-child {
+    margin: 20px
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:939px) {
+  .wrapper {
+    width: 768px;
+    height:25%;
+  }
+
+  .partner {
+    width: 254px
+  }
+
+  .partner:nth-child(-n+2) {
+    padding: 0 0 60px
+  }
+
+  .item {
+    width: 30%
+  }
+
+  .jcarousel-wrapper {
+    width: 236px;
+    padding: 0 5px
+  }
+
+  .jcarousel-wrapper .change {
+    width: 236px
+  }
+
+  .jcarousel-control-next,.jcarousel-control-prev {
+    top: 40px
+  }
+
+  .logo {
+    padding: 50px 0 0 50px
+  }
+
+  .login {
+    padding: 0 50px 0 0
+  }
+
+  .bottom {
+    padding: 0 40px
+  }
+}
+
+@media only screen and (min-width:940px) {
+  header .wrapper {
+    padding-bottom: 240px
+  }
+
+  .wrapper {
+    width: 940px
+  }
+
+  .item {
+    width: 30%
+  }
+}
+@media only screen and (min-width:1px) and (max-width:768px) {
+  .wrapper {
+  height:25%;
+}
+}
+@media only screen and (min-width:1px) and (max-width:320px) {
+  .header__link {
+  width:95%;
+}
+}

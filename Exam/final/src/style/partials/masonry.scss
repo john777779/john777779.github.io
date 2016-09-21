@@ -1,0 +1,23 @@
+.grid__text{
+  position: absolute;
+  width:100%;
+  top:45%;
+  font-family: $montserratbold;
+  font-size: 22px;
+  text-align: center;
+  color: $header-text-color;
+}
+.picture {
+  margin: 1.5%;
+}
+.radius {
+  border-radius: 5px;
+  max-width: 100%;
+}
+#noPic{
+  color: $header-link-background;
+  font-family: $montserratbold;
+  font-size: $font-slider-title-size;
+  margin: $slider-title-margin;
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+<div class="pictures">
+    <div class="wrapper clearfix">
+        <div class="section__title">Discovery holiday activity ideas</div>
+        <div class="grid clearfix" id="container">
+        <script type="text/template" id="pictureLayout">
+            <% for(var i=0; i < hits.length; i++) { %>
+            <figure class="picture item"><img class="radius" src="<%= hits[i].webformatURL%>" alt="picture">
+                <figcaption class="grid__text"><%= hits[i].tags.split(',')[0] %> </figcaption>
+                </figure>
+            <% }; %>
+            </script>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="section__title section__title2">Discovery holiday activity ideas</div>
+        <label for="seek" class="section__text">Hi! What are your holiday interests?</label>
+        <div class="search">
+            <input type="text" id="seek" placeholder="Enter your interest"/>
+            <a href="#" class="searching" id="seekbutton">Search partners</a>
+        </div>
+    </div>
+</div>
